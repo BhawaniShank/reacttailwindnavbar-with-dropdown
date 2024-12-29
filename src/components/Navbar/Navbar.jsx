@@ -28,7 +28,7 @@ const Navbar = () => {
     style={{
       background: `linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 0%, 
         rgba(0, 0, 0, 0.25) 40%,
         rgba(0, 0, 0, 0.1) 70%,
         transparent 100%
@@ -99,13 +99,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="bg-white absolute w-full shadow-md lg
+        <div className="backdrop-blur-lg bg-black/75 text-white absolute w-full shadow-md lg
         :hidden">
           <ul className="flex flex-col p-4">
             {links.map((link, index) => (
               <li key={index}>
                 <button
-                  className="w-full text-left py-2 px-4 uppercase hover:text-primary"
+                  className="w-full text-left py-2 px-4 uppercase hover:text-gray-200"
                   onClick={() =>
                     setDropdownOpen((prev) =>
                       prev === index ? null : index
@@ -126,7 +126,7 @@ const Navbar = () => {
                   )}
                 </button>
                 {link.dropdown && dropdownOpen === index && (
-                  <div className="ml-6 text-sm text-gray-600">
+                  <div className="ml-6 text-sm text-gray-200">
                     {link.dropdown.map((item, i) => (
                       <p key={i} className="py-1">
                         {item}

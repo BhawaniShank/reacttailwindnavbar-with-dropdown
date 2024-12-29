@@ -21,7 +21,7 @@ const Footer = () => {
           SUBSCRIBE
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
         <div>
           <h2 className="font-semibold mb-2">Our Story</h2>
           <p>
@@ -71,7 +71,10 @@ const Footer = () => {
                 Privacy Policy
               </a>
             </li>
-            <div className="mt-40 mb-20">
+         
+          </ul>
+        </div>
+        <div className="md:mt-40 md:mb-20 md:col-start-4">
           <h2 className="font-semibold mb-4">Follow us</h2>
           
           <div className="flex space-x-4 mb-6">
@@ -93,9 +96,6 @@ const Footer = () => {
             <p>31%</p>
           </div>
         </div>
-          </ul>
-        </div>
-        
       </div>
       <footer className="mt-10 w-full text-center text-gray-100">
         <p>© Copyright 2024
